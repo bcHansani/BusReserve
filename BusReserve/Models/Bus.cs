@@ -12,5 +12,7 @@ namespace BusReserve.Models
         public string BusId { get; set; }
         public string BusName { get; set; }
         public string AvailableSeats { get; set; }
+        public BusRoute Route { get; set; }
+        public virtual List<User> Users { get; set; }
     }
 }
